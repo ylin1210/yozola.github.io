@@ -1,0 +1,235 @@
+body{ 
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: #77AAAD;
+}
+
+.header-fixed{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    right: 0px; 
+    clear: both;
+    background-color: #77AAAD;
+    z-index: 2;
+}
+.logo{
+    display: block;
+    height: 80px;;
+    width: 150px;
+    margin: auto;
+}
+.menu{
+    height: 50px;
+    width: auto;
+    background-color: #D8E6E7;
+    display: flex;
+    justify-content: center; /* 水平置中 */
+}
+.m-a{
+    color: #6E7783;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;/* 垂直置中 */
+}
+.m-ul{
+    position: relative;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    /*padding: 0px; */
+}
+.m-ul a{
+    padding: 13px 20px;
+    transition: 0.5s;
+}
+.m-ul a:hover{
+    background-color: #76c5cb;
+}
+#m-ul{
+    text-decoration: none;
+}/*id權重為100，加上之後可以覆蓋boostrap預設的Css*/
+/*預計優化：命名m-a 套用到所有 Class刪除*/
+
+.clear{
+    height: 10px;
+    width: auto;
+    
+}
+#clear{
+    clear: both;
+}
+
+
+/*內文*/
+.content{
+    display: flex;
+    justify-content: center;
+}
+.left-div{
+	float:left;
+    height: 300px;
+	width: 300px;
+    display: flex;
+    align-items: center;
+}
+.right-div{
+	float:left;
+}
+
+/*幻燈片*/
+.slideshow{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+#a{
+    width: 800px;
+    height: 400px;
+}
+.left{
+    position: absolute;
+    top: 40%;
+    left: 24%;
+    z-index: 1;
+    
+}
+.right{
+    position: absolute;
+    top: 40%;
+    right: 24%;
+    z-index: 1;
+}
+.bt{
+
+    z-index: 1;
+}
+
+
+
+
+/*Footer*/
+.footer{
+    height: 100px;
+    width: auto;
+    background-color: #D8E6E7;
+    position: relative;
+
+}
+.counter{
+    float: left;
+}
+.social-icon{
+    float:right;
+    /*left: 0%;*/
+    bottom: 0;
+}
+    /*icon裡面*/
+    #fb-icon, #ig-icon, #yt-icon{
+        /*bottom: 0;*/
+        float: right;
+        padding-left: 20px;
+    }
+    
+    
+.service-hours{
+    float: right;
+}
+
+
+    /*div-social裡*/
+    .mail{
+
+        float: right;
+        bottom: 30px;
+    }
+    .social-icon{
+        position: absolute;
+        right: 10px;
+        bottom: 10px;       
+    }
+
+/*以下是BOBO*/
+.container{
+    margin:0 auto;
+    width: 1000px;
+    max-width: 100%;
+}
+.h1{
+    background-color: bisque;
+    text-align: center;
+    padding: 0;
+    margin: 0 a;
+}
+.h2{
+    text-align: center;
+}
+.stencil-img{
+    width: 800px;
+    height: 300px;
+    
+    
+    width:100%;
+    height:auto;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /*1022添加，放大過頭會隱藏*/
+    overflow:hidden;
+}
+
+/*1022添加，游標移過去圖片放大所需的時間和特效*/
+.stencil-img img{transform:scale(1,1);transition: all 1s ease-out;}
+/*1022添加，游標移過去圖會放大，好像是倍率?*/
+.stencil-img img:hover{transform:scale(1.2,1.2);}
+/*1022目前問題，螢幕縮小，圖片縮放超越框框*/
+
+.h4{
+    background-color: bisque;
+    text-align: center;
+
+}
+.h5{
+    text-align: center;
+}
+.h6{
+    width: 800px;
+    height: 300px;
+    margin: 0 auto;/*無效*/
+
+    width:100%;
+    height:auto;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+
+}
+
+/*以下是學姊*/
+section {
+  padding: 50px 0px;
+  text-decoration: none;
+}
+
+section#section_about img {
+  width: 130%;
+}
+section#section_about .img_wrap {
+  height: 220px;
+  overflow: hidden;
+}
+
+.img_wrap:hover {
+ box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+}
+/*滑鼠移到圖片上會有框框*/
