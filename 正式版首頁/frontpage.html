@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="frontpage.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
     <html xmlns="http://www.w3.org/1999/xhtml"></html>
     <script src="frontpage.js"></script>
     
@@ -12,15 +15,14 @@
     <!--HEADER-->
     <div class="header-fixed">
         <!--LOGO-->
-        <a href="frontpage.html" data-ajax="false"><img class="logo" src="img/LOGO.PNG"></a>
+        <a href="frontpage.html" data-ajax="false"><img class="logo" src="img/LOGO2.PNG"></a>
         <!--MENU-->
         <div class="menu">
             <ul class="m-ul">
-                <a href="new.html" data-ajax="false" id="m-ul" class="m-a">最新消息</a>
-                <a href="aboutus.html" data-ajax="false" id="m-ul" class="m-a">關於我們</a>
-                <a href="product.html" data-ajax="false" id="m-ul" class="m-a">產品介紹</a>
-                <a href="" class="m-a">常見問題</a>
-                <a href="" class="m-a">活動體驗</a>
+                <a href="new.html" data-ajax="false" id="m-a" >最新消息</a>
+                <a href="aboutus.html" data-ajax="false" id="m-a">關於我們</a>
+                <a href="product.html" data-ajax="false" id="m-a">產品介紹</a>
+                <a href="q.html" data-ajax="false" id="m-a">常見問題</a>
             </ul>
         </div>
     </div>
@@ -29,22 +31,32 @@
 
     <!--幻燈片-->
         <!--到時候最新消息要能連結-->
-    <div class="slideshow">
+    <!--<div class="slideshow">
         <a href="#" id="left" class="left" onClick="l()"><img src="btl.png" class="bt" style="height: 40px; width: 40px;"></a>
         <a href="#" id="right" class="right" onClick="r()"><img src="bt.png" class="bt" style="height: 40px; width: 40px;"></a>
 
-        <a href="#"><img src="lunbo1.png" id="a"></a><!--分開寫四個img？-->
-        <img src="lunbo1.png" class="gimg" onclick="b(0)" hidden><!--hidden是隱藏起來意思-->
+        <a href="#"><img src="lunbo1.png" id="a"></a><分開寫四個img？>
+        <img src="lunbo1.png" class="gimg" onclick="b(0)" hidden><hidden是隱藏起來意思>
         <img src="lunbo2.png" class="gimg" onclick="b(1)" hidden>
         <img src="lunbo3.png" class="gimg" onclick="b(2)" hidden>
         <img src="lunbo4.png" class="gimg" onclick="b(3)" hidden>
-    </div>
+    </div>-->
 
     <br><br>
 
     <!--形象片-->
     <div class="content">
-    <div class="video"> 
+    <div class="video">
+        <div class="right-div">
+            <iframe width="800" height="315" src="https://www.youtube.com/embed/0VdYxClGax4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <br>
+        <!--團隊名稱-->
+        <div class="w3-container w3-lobster">
+            <p class="w3-xxxlarge">YOZOLR</p>
+        </div>
+        <!--<div style="display: flex;justify-content: center;margin:0px auto;"><h1>YOZOLR</h1><br></div>-->
+        <!--形象片敘述-->
         <div class="left-div">
             <p>公明難切教卻我帶真女藝遠；行多了麼分原，
                 從星石可智木在相高字：民識離：際經時，系統而師受英力，
@@ -53,10 +65,6 @@
                 類笑朋。和所上氣等是道國里卻造歷。
             </p>
         </div>
-        <div style="height:50px;width: 50px;float:left;"></div>
-        <div class="right-div">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/mNQwt3nntT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
     </div>
     </div>
 
@@ -64,32 +72,29 @@
     
     <!--FOOTER-->
     <footer>
-        <div class="footer">
-            <br>
-            <div class="counter">
+        <br>
+            <!--<div class="counter">
                 <a href="http://cn.web-counter.net" title="计数器">
                     <img src="http://www.web-counter.net/count_20091204.php?c=15XuqjS98JE" style="border:0;padding:0;margin:0;" alt="计数器">
                 </a>
                 <div font size="1" face="Arial">
                     <a href="http://cn.web-counter.net" title="计数器">計數器</a>
                 </div>
+            </div>-->
+            <div id="mail">
+                <p>E-mail：xxxx@gmail.com</p>
             </div>
-            <div class="div-social">
-                <div class="mail">
-                    <p>E-mail：xxxx@gmail.com</p>
-                </div>
-                <div id="div2" class="social-icon">
-                    <a href=""><img src="img/yt.png" id="yt-icon" style="height: 35px; width: 35px;"></a>
-                    <a href=""><img src="img/ig.png" id="ig-icon" style="height: 35px; width: 35px;"></a>
-                    <a href=""><img src="img/fb.png" id="fb-icon" style="height: 35px; width: 35px;"></a>
-                </div>
+            <h3 id="div1">追蹤我們</h3>
+            <div id="div2" class="social-icon">
+                
+                <a href="https://www.youtube.com/" id="social-icon-a"><img src="img/yt.png" id="yt-icon" style="height: 50px; width: 70px;"></a>
+                <a href="https://www.instagram.com/" id="social-icon-a"><img src="img/ig.png" id="ig-icon" style="height: 50px; width: 70px;"></a>
+                <a href="https://www.facebook.com/" id="social-icon-a"><img src="img/fb.png" id="fb-icon" style="height: 50px; width: 70px;"></a>
             </div>
-
-            <div class="service-hours">
-                <p>服務時間：00:00~00:00</p>
+            <div id="service-hours">
+                <h6>@文化大學資訊傳播學系</h6>
             </div>
             
-        </div>
 
     </footer>
     
