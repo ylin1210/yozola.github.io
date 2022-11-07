@@ -16,3 +16,8 @@ function r(){
 	curindex=(curindex+1)%4;
 	b(curindex);
 }
+
+
+$('.carousel').carousel()({
+	interval: 2000
+})

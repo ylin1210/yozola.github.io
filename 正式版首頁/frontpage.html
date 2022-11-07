@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="frontpage.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
     <html xmlns="http://www.w3.org/1999/xhtml"></html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="frontpage.js"></script>
     
 </head>
@@ -28,36 +33,52 @@
     </div>
     
     <div id="clear" class="clear"></div><!--我忘記設這幹嘛了-->
-
+    
+    <br><br><br><br>
     <!--幻燈片-->
-        <!--到時候最新消息要能連結-->
-    <!--<div class="slideshow">
-        <a href="#" id="left" class="left" onClick="l()"><img src="btl.png" class="bt" style="height: 40px; width: 40px;"></a>
-        <a href="#" id="right" class="right" onClick="r()"><img src="bt.png" class="bt" style="height: 40px; width: 40px;"></a>
+    <div class="container">
+        <div class="carousel slide" data-ride="carousel" id="carousel-demo">
+             <ol class="carousel-indicators">
+               <li data-target="#carousel-demo" data-slide-to="0" class="active"></li>
+               <li data-target="#carousel-demo" data-slide-to="1"></li>
+               <li data-target="#carousel-demo" data-slide-to="2"></li>
+             </ol>
+           <div class="carousel-inner">
+             <div class="carousel-item active">
+               <img class="d-block w-100" src="https://www.taiwan.net.tw/att/1/big_scenic_spots/pic_412_8.jpg" alt="">
+             </div>
+             <div class="carousel-item">
+               <img class="d-block w-100" src="http://farm4.staticflickr.com/3795/9269794168_3ac58fc15c_b.jpg" alt="">
+             </div>
+             <div class="carousel-item">
+               <img class="d-block w-100" src="https://www.taiwan.net.tw/att/1/big_scenic_spots/pic_3266_19.jpg" alt="">
+             </div>
+           
+             <a href="#carousel-demo" class="carousel-control-prev" data-slide="prev">
+             <span class="carousel-control-prev-icon"></span>
+             </a>
+             <a href="#carousel-demo" class="carousel-control-next" data-slide="next">
+               <span class="carousel-control-next-icon"></span>
+             </a>
+           </div>
+         </div>
+     </div>
 
-        <a href="#"><img src="lunbo1.png" id="a"></a><分開寫四個img？>
-        <img src="lunbo1.png" class="gimg" onclick="b(0)" hidden><hidden是隱藏起來意思>
-        <img src="lunbo2.png" class="gimg" onclick="b(1)" hidden>
-        <img src="lunbo3.png" class="gimg" onclick="b(2)" hidden>
-        <img src="lunbo4.png" class="gimg" onclick="b(3)" hidden>
-    </div>-->
-
-    <br><br>
+     <br><br><br><br><br>
 
     <!--形象片-->
     <div class="content">
-    <div class="video">
-        <div class="right-div">
-            <iframe width="800" height="315" src="https://www.youtube.com/embed/0VdYxClGax4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="top-div">
+            <iframe src="https://www.youtube.com/embed/KlkZQxichUc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <br>
         <!--團隊名稱-->
         <div class="w3-container w3-lobster">
-            <p class="w3-xxxlarge">YOZOLR</p>
+            <p class="w3-xxxlarge" id="w3-logo">YOZOLR</p>
         </div>
         <!--<div style="display: flex;justify-content: center;margin:0px auto;"><h1>YOZOLR</h1><br></div>-->
         <!--形象片敘述-->
-        <div class="left-div">
+        <div class="bt-div">
             <p>公明難切教卻我帶真女藝遠；行多了麼分原，
                 從星石可智木在相高字：民識離：際經時，系統而師受英力，
                 令人能際人角工智存這了。來灣在排表中提十高他化正量時站紀；
@@ -65,7 +86,6 @@
                 類笑朋。和所上氣等是道國里卻造歷。
             </p>
         </div>
-    </div>
     </div>
 
     <br>
@@ -87,9 +107,9 @@
             <h3 id="div1">追蹤我們</h3>
             <div id="div2" class="social-icon">
                 
-                <a href="https://www.youtube.com/" id="social-icon-a"><img src="img/yt.png" id="yt-icon" style="height: 50px; width: 70px;"></a>
-                <a href="https://www.instagram.com/" id="social-icon-a"><img src="img/ig.png" id="ig-icon" style="height: 50px; width: 70px;"></a>
-                <a href="https://www.facebook.com/" id="social-icon-a"><img src="img/fb.png" id="fb-icon" style="height: 50px; width: 70px;"></a>
+                <a href="https://www.youtube.com/" target="_blank" id="social-icon-a"><img src="img/yt logo.png" id="yt-icon" style="height: 50px; width: 70px;"></a>
+                <a href="https://www.instagram.com/yozola.candle/" target="_blank" id="social-icon-a"><img src="img/ig logo.png" id="ig-icon" style="height: 50px; width: 70px;"></a>
+                <a href="https://www.facebook.com/" target="_blank" id="social-icon-a"><img src="img/fb logo.png" id="fb-icon" style="height: 50px; width: 70px;"></a>
             </div>
             <div id="service-hours">
                 <h6>@文化大學資訊傳播學系</h6>
