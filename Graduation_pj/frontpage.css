@@ -73,14 +73,14 @@ li{
 }
 .carousel .carousel-item .slide {
     height: auto;
-    max-height: 400px;
+    max-height: auto;
     overflow: hidden;
 }
   
 .carousel .carousel-item img {
     height: auto;
     min-height: auto;
-    max-height: 500px;
+    max-height: auto;
     object-fit: cover;
 }
 
