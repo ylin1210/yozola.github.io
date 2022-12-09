@@ -1,0 +1,195 @@
+body{ 
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+@media (min-width: 992px){
+    .Header-Ph{
+        display: none;
+    }
+}
+@media (max-width: 992px){
+    .Header-Ph{
+        display: block;
+    }
+    .Header-PC{
+        display: none;
+    }
+}
+
+/*MENU-iphone*/
+/*絕對勿動*/
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-collapse{
+    display: block !important;
+}
+}
+
+/*12.07更新 產品 改為背景顯示*/
+.more-a{  /* 因為繼續閱讀是個超連結，要用a來定義 */
+    display: none;   /*平常設定不要顯示 */
+}
+.more:hover .more-a{
+    display: block; 
+}
+
+#menu-a{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;/* 垂直置中 */
+    text-decoration: none;/*id權重為100，加上之後可以覆蓋boostrap預設的Css*/
+}
+
+.navbar-collapse {
+    flex-basis: 100%;
+    align-items: center;
+    flex-grow: 0 !important; 
+}
+
+/*MENU-PC*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 90px;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    text-align: center;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+}
+
+/*選項背景*/
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/*下拉效果*/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*移過去顏色*/
+/*.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}*/
+
+.menu-a{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/*產品*/
+#div-row{
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+.img-a{
+    position: absolute;
+    bottom: 25px;
+    padding-left: 250px;
+}
+.img-a-p{
+    position: absolute;
+    bottom: 25px;
+    padding-left: 250px;
+}
+@media (max-width: 992px){
+    .img-a-p{
+        position: relative;
+        bottom: 55px;
+        right: 0;
+    }
+}
+
+/*消息*/
+.div-p{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.p-h5{
+    padding-top: 10%;
+    text-align: center;
+    /*top:50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+}
+
+/*footer*/
+.div-f{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+.f-a{
+    padding-left: 20px;
+    transform: translateY(20%);
+}
+.f-p{
+    margin:0px 0px 0px auto;
+    padding-right: 20px;
+    transform: translateY(20%);
+}
+.f-img{
+    margin-right: 40px;
+}
+@media (max-width: 452px) {
+    .f-img{
+        margin: auto;
+    }
+    .div-p{
+        margin: auto;}}
+
+
+/*JQ 回到top*/
+/* 56px */
+.toTop-arrow {
+	width: 3.5rem;
+	height: 3.5rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 4rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 31px;
+	height: 7px;
+	border-radius: 3px;
+	background: rgb(109, 103, 137);
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.4rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.4rem;
+}
+.toTop-arrow:focus {outline: none;}

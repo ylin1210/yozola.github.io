@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--self-->
+    <link rel="stylesheet" type="text/css" href="fp.css">
+    <script src="fp.js"></script>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--神奇特效-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    
+    <title>Yozola</title>
+    <style>
+        @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+        body{
+            font-family: 'cwTeXYen', sans-serif;
+            font-weight:550;
+        }
+
+        .st-title{
+            text-align: center;
+            padding: 20px;
+        }
+        .p-st{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .p-img{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .st-in{
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 20px;
+        }
+
+        @media (max-width: 480px) {
+            .from-p{
+                font-size: medium;
+            }
+        }
+    </style>
+</head>
+<body style="background-color: rgb(245, 232, 200);">
+    <!--Header Phone-->
+    <div class="Header-Ph">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navber" style="padding: 0;" >
+            <div class="container-fluid" style="background-color: rgb(109, 103, 137);">
+              <a class="navbar-brand" href="yozola.html"><img src="img/LOGO.PNG" height="70px" width="142px"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: rgb(187, 187, 187);">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+                    <li class="nav-item" id="menu-a">
+                        <a class="nav-link" href="aboutus.html" style="color: rgb(255, 255, 255); font-size: 20px;">關於我們</a>
+                    </li>
+                    <li class="nav-item" id="menu-a">
+                        <a class="nav-link" href="new.html" style="color: rgb(255, 255, 255); font-size: 20px;">最新消息</a>
+                    </li>
+                    <li class="nav-item dropdown" id="menu-a">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: rgb(255, 255, 255); font-size: 20px;">
+                        產品
+                        </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                      <li><a class="dropdown-item" href="p_candle.html" id="menu-a" style="color: rgb(0, 0, 0);">蠟燭</a></li>
+                      <li><a class="dropdown-item" href="p_stencil.html" id="menu-a" style="color: rgb(0, 0, 0);">蠟紙</a></li>
+                    </ul>
+                    </li>
+                    <!--<li class="nav-item" id="menu-a">
+                        <a class="nav-link" href="#" style="color: rgb(255, 255, 255); font-size: 20px;">活動體驗</a>
+                    </li>-->
+                    <li class="nav-item" id="menu-a">
+                        <a class="nav-link" href="connect.html" style="color: rgb(255, 255, 255); font-size: 20px;">聯絡我們</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </div>
+    <!--Header PC-->
+    <div class="Header-PC">
+    <div style="display: flex; background-color: rgb(109, 103, 137);">
+        <div class="logo-pc"><a href="yozola.html"><img src="img/LOGO.PNG" height="80px" width="160px" style="padding: 5px; padding-left: 13px;"></a></div>
+        <div style="display: flex; justify-content: center; align-items: center; margin-left: auto; padding-right: 15px;">
+            <div class="menu-a"><a href="aboutus.html" style="color: white; text-decoration: none; font-size: 25px;">關於我們</a></div>
+            <div class="menu-a"><a href="new.html" style="color: white; text-decoration: none; font-size: 25px;">最新消息</a></div>
+            <div class="dropdown menu-a">
+                <div class="dropbtn"><a href="" style="color: white; text-decoration: none; font-size: 25px;">產品</a></div>
+                <div class="dropdown-content">
+                    <a href="p_stencil.html" style="font-size: 25px;">蠟紙</a>
+                    <a href="p_candle.html" style="font-size: 25px;">蠟燭</a>
+                </div>
+            </div>
+            <!--<div class="menu-a"><a href="" style="color: white; text-decoration: none; font-size: 25px;">活動體驗</a></div>-->
+            <div class="menu-a"><a href="connect.html" style="color: white; text-decoration: none; font-size: 25px;">聯絡我們</a></div>
+        </div>
+    </div>
+    </div>
+
+    <!--Title-->
+<div data-aos="fade-up" data-aos-duration="2000">
+    <div class="st-title">
+        <h1>香氛蠟燭</h1>
+    </div>
+    <!--圖片-->
+    <div class="p-st">
+        <div class="p-img">
+            <img src="img/IMG_or.jpeg" height="400px" width="320px">
+            <h4>紅紅火火</h4>
+        </div>
+        <div class="p-img">
+            <img src="img/IMG_p.jpeg" height="400px" width="320px">
+            <h4>粉粉漂漂</h4>
+        </div>
+    </div>
+</div>
+    <!--可以不用<div>
+        <hr style="height: 5px; color: gray; width: 95%; margin: auto;">
+    </div>-->
+    <br>
+<div data-aos="fade-up" data-aos-duration="2000">
+    <!--介紹文-->
+    <div class="st-in" style="height: auto; width: auto; margin: 0;">
+        <h2 style="text-align: center;">香氛蠟燭</h2>
+        <p style="font-size: 20px; text-align: center;">一個寧靜的夜晚，一道微光溫暖了心靈，在那片刻的寧靜當中，重新找回了自我。<br>
+        蠟的選擇採用大豆蠟，為天然萃取物並且低溫安全，融化後的液體溫度大約落在48~52度，<br>
+        再搭配上造型以及香味，即便不點燃，他將會是在每夜陪伴著你的夥伴同時也是個賞心悅目的收藏品。</p>
+    </div>
+    <div style="text-align: center;">
+        形象片
+    </div>
+</div>
+    <!--規格-->
+<div data-aos="fade-up" data-aos-duration="2000">
+    <div class="st-in">
+        <h2>規格</h2>
+        <p style="font-size: 20px;">
+        蠟的種類：大豆蠟、蜂蠟<br>
+        燭芯材質：蜂蠟蠟芯<br>
+        外觀容器：兔頭<br>
+        香味：<br>
+        成分：大豆蠟、蜂蠟、精油<br>
+        可燃燒時間：<br>
+        容量：210G<br>
+        用途用法：居家擺飾、送禮。
+        </p>
+    </div>
+    <!--常見問題-->
+    <div class="st-in">
+        <h2>常見問題</h2>
+        <p style="font-size: 20px;">
+            Q：<br>
+            A：<br>
+            Q：<br>
+            A：<br>
+            Q：<br>
+            A：<br>
+        </p>
+    </div>
+</div>
+
+    <!--表單-->
+    <div style="display: flex; justify-content: center; flex-direction: row; flex-wrap: wrap;">
+        <div>
+        <h1 class="from-p" style="text-align: center; margin: 0; margin-bottom: -10px;">如要購買可以點擊表單填寫<a href="form.html"><img src="img/forms.png" height="30px" width="30px"></a></h1><br>
+        <h2 class="from-p" style="text-align: center; margin: 0; margin-top: -10px;">YOZOLA全體人員感謝您</h2>
+        </div>
+    </div>
+
+
+    <!--Footer-->
+    <div style="background-color: rgb(109, 103, 137); padding: 3px;">
+        <!--線先不要<div>
+            <hr style="height: 5px; color: gray; width: 95%; margin: auto;">
+        </div>-->
+        <div class="div-f">
+            <div class="f-a">
+                <a href="yozola.html" style="text-decoration:none; color: rgb(255, 255, 255);"><h5>首頁</h5></a>
+            </div>
+            <div class="f-p" style="color: white;">
+                <p>Email：xxx@gmail.com</p>
+            </div>
+            <div class="f-img">
+                <a href="" target="_blank"><img src="img/YT icon.png" height="40" width="40px"></a>
+                <a href="https://www.instagram.com/yozola.candle/" target="_blank"><img src="img/IG icon.png" height="40" width="40px"></a>
+                <a href="https://www.facebook.com/profile.php?id=100087971047136&mibextid=LQQJ4d" target="_blank"><img src="img/FB icon.png" height="40" width="40px"></a>
+            </div>
+        </div>
+    </div>
+
+<!--神奇特效-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<!--Totop-->
+<button type="button" id="BackTop" class="toTop-arrow"></button>
+<script>
+$(function(){
+	$('#BackTop').click(function(){ 
+		$('html,body').animate({scrollTop:0}, 333);
+	});
+	$(window).scroll(function() {
+		if ( $(this).scrollTop() > 300 ){
+			$('#BackTop').fadeIn(222);
+		} else {
+			$('#BackTop').stop().fadeOut(222);
+		}
+	}).scroll();
+});
+</script>
+</body>
+</html>
