@@ -50,6 +50,11 @@ body{
 }
 
 /*MENU-PC*/
+
+.dropdown-menu{
+    background-color: rgb(109, 103, 137);
+    opacity: 0.8;
+}
 .dropdown {
     position: relative;
     display: inline-block;
