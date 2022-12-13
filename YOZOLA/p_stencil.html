@@ -27,6 +27,25 @@
             font-weight:550;
         }
 
+        /*形象片*/
+        .iframe-div{
+            position: relative;
+            padding-bottom: 56.25%;
+            top: 0;
+            height: 30px;
+        /* overflow: hidden;*/
+        }
+
+        .iframe-div iframe, .iframe-div object, .iframe-div embed {
+            position: absolute;
+            padding-left: 30px;
+            padding-right: 30px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 90%;
+        }
+
         .st-title{
             text-align: center;
             padding: 20px;
@@ -177,8 +196,8 @@
             <p style="font-size: 3.5vmin; text-align: center;">環保一直是個相當沉重議題，該如何讓世界少點負擔、讓海洋更乾淨、讓地球更健康，成了現在很重要的課題。<br>
             我們想到了利用蠟將紙張包裹住，為紙穿上了一層薄薄的保護膜，以此達到抗汙抗油的功能，將紙張重複使用的次數增加。<br>
             不再產生過多的包裝垃圾以及伐更多的樹木來供應紙張，實現了真正的重複再利用，保護這一塊大地。</p>
-            <div style="text-align: center;">
-                形象片
+            <div class="iframe-div"><br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/AUJdiI1_EmI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
