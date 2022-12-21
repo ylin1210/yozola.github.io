@@ -1,0 +1,42 @@
+.n-a-div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.n-div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.n-text{
+    height: 300px;
+    width: 350px;
+}
+.more-a{  /* 因為繼續閱讀是個超連結，要用a來定義 */
+    display: none;   /*平常設定不要顯示 */
+}
+.n-img:hover .more-a{
+    display: block; 
+}
+@media (max-width: 992px){
+    .n-text{
+        width: auto;
+        overflow: hidden;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .n-text p{
+        display: none;
+    }
+    .n-text a{
+        position: relative !important;
+    }
+    .n-text img{
+        display:block;
+        margin:auto;
+    }
+}

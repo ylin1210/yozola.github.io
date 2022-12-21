@@ -1,0 +1,70 @@
+#img2 {
+    display: none;
+}
+
+#second {
+    display: none;
+}
+
+#first img{
+    max-width: 100%;
+    height: auto;
+}
+#second img{
+    max-width: 100%;
+    height: auto;
+}
+.map-ul{
+    margin: 0 auto 0 auto;
+    list-style-type: disc;
+}
+#second ul{
+    display: grid;
+    justify-content: center;
+}
+#first ul{
+    display: grid;
+    justify-content: center;
+}
+
+
+@media (max-width: 1350px){
+    .stencil-img{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+}
+@media (max-width: 480px) {
+    .b1-img{
+        height: 50px;
+        width: auto;
+    }
+    .b2-img{
+        height: 50px;
+        width: auto;
+    }
+    .con-h1{
+        font-size: medium;
+    }
+    .con-img{
+        height: 100px;
+        width: 100px;
+    }
+    .title-h3{
+        font-size: medium;
+    }
+    .go-h1{
+        font-size: 25px;
+    }
+    .br-f{
+        display: none;
+    }
+
+}
+
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-collapse{
+        display: block !important;
+    }
+}
