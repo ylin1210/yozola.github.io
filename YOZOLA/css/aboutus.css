@@ -7,7 +7,7 @@ ul li{
     padding-bottom: 56.25%;
     top: 0;
     height: 30px;
-overflow: hidden;
+/* overflow: hidden;*/
 }
 
 .iframe-div iframe, .iframe-div object, .iframe-div embed {
@@ -60,9 +60,4 @@ overflow: hidden;
     .PC-iframe{
         display: none;
     }
-}
-
-/* 關於我們 */
-.about-1{
-    box-shadow: 5px 5px 20px rgb(109, 103, 137);
 }
