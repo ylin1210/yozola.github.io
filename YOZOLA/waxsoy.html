@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <style>
+        .wrapper{
+            display: inline-flex;
+        }
+        .wrapper .dynamic-txts{
+            height: 90px;
+            line-height: 90px;
+            overflow: hidden;
+        }
+        .dynamic-txts li{
+            color: black;
+            list-style: none;
+            font-size: 60px;
+            font-weight: 500;
+            position: relative;
+            top: 0;
+            animation: slide 4s steps(2) infinite;
+        }
+        @keyframes slide {
+            100%{
+                top: -360px;
+            }
+        }
+        
+        .dynamic-txts li span{
+            position: relative;
+        }
+        .dynamic-txts li span::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            height: 120%;
+            width: 100%;
+            background: rgb(234, 217, 181);
+            border-left: 2px solid black;
+            animation: typing 2s steps(5) infinite;
+        }
+        @keyframes typing {
+            100%{
+                left: 100%;
+                margin:  0 -80px 0 80px;
+            }
+        }
+    </style>
+</head>
+<body style="background-color: rgb(234, 217, 181);">
+    <div style="min-height: 100vh; padding-top: 100px;">
+    <div class="wrapper" style="display: flex; justify-content: center; align-items: center; min-height: 50vh;">
+        <div class="dynamic-txts">
+            <li><span>蜂蠟的介紹</span></li>
+        </div>
+        
+    </div>
+    <div>
+        <a href="#1"><h1>ENTER</h1></a>
+    </div>
+    </div>
+
+    <div id="1">
+        <span style="display: flex; justify-content: center; align-items: center; font-size: 40px;">
+            蜂蠟是製作蠟燭的最古老、最傳統的材料之一。 
+        </span>
+        <span style="display: flex; justify-content: center; align-items: center; font-size: 40px;">
+            蜂蠟製成的蠟燭呈現<span style="color: yellow;">淺黃色</span>或<span style="color: azure;">白色</span>，具有天然的香氣。
+        </span><br><br>
+
+        <div><h1 style="color: red;">蜂蠟的優勢，有以下三點</h1></div><br><br>
+        
+        <div class="container" style="display: flex; justify-content: center; align-items: center;">
+            <div class="row">
+              <div class="col" style="margin: 40px; max-width:300px; padding-right: 10px;">
+                <img src="img-2/planet-earth.png" height="300px" width="300px">
+                <div>
+                    <h1>天然材料</h1>
+                    <h3>蜂蠟是一種天然的材料，不會釋放有害化學物質。</h3>
+                </div>
+              </div>
+              <div class="col" style="margin: 40px; max-width:300px; padding-left: 10px; padding-right: 10px;">
+                <img src="img-2/beeswax.png" height="300px" width="300px">
+                <div>
+                    <h1>天然香氣</h1>
+                    <h3>蜂蠟本身具有天然的香氣，不需要添加香料。</h3>
+                </div>
+              </div>
+              <div class="col" style="margin: 40px; max-width:300px; padding-left: 10px;">
+                <img src="img-2/flammable.png" height="300px" width="300px">
+                <div>
+                    <h1>燃燒性能</h1>
+                    <h3>蜂蠟燃燒時產生的煙霧較少，燃燒時間較長。</h3>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

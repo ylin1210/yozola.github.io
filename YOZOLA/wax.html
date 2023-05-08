@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yozola</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+
+    <!--神奇特效-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body style="background: linear-gradient(to bottom, rgb(234, 217, 181),rgb(183, 175, 220));">
+    <div>
+        <a class="a" href="yozola.html"><h1 style="text-align: center; color: rgb(137, 118, 220);"><img src="img/icon/home.png" height="50px" width="50px"> 回到首頁</h1></a>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="2000">
+        <img src="CG_句子/YOZOLA.png" height="100%" width="100%" style="padding: 20px; padding-top: 15%;">
+        <p style="text-align: center; font-size: 40px; color: rgb(120, 120, 255); font-weight: bold;">點擊</p>
+        <a href="#句子2"><div id="DIV" style="margin-top: -120px;"></div></a>
+    </div>
+
+    <div id="句子2" data-aos="fade-up" data-aos-duration="2000">
+        <img src="CG_img/1.png" height="100%" width="100%" style="padding: 50px; padding-top: 18%;">
+        <a href="#句子3"><div id="DIV-1"></div></a>
+    </div>
+
+    <div id="句子3" data-aos="fade-up" data-aos-duration="2000">
+        <img src="CG_句子/日常.png" height="80%" width="80%" style="padding: 10px; padding-top: 10%;">
+        <a href="#句子4"><div id="DIV-2"></div></a>
+    </div>
+
+    <div id="句子4" data-aos="fade-up" data-aos-duration="2000">
+        <img src="CG_img/3.png" height="100%" width="100%" style="padding: 30px; padding-top: 18%;">
+        <a href="#句子5"><div id="DIV-3"></div></a>    
+    </div>
+
+    <div id="句子5" data-aos="fade-up" data-aos-duration="2000">
+        <img src="CG_img/4.png" height="100%" width="100%" style="padding: 20px; padding-top: 18%; padding-bottom: 3%;">
+        <a href="#WHY"><div id="DIV-4"></div></a>  
+    </div>
+
+    <br><br><br><br><br>
+    <h2 id="WHY" style="text-align: center; color: rgb(243, 231, 200); margin: 50px;">點選查看為甚麼</h2>
+    <a href="two.html"><img src="CG_img/？？？.png" style="display:block; margin:auto; margin-bottom: 10%;"></a>
+    
+    <!-- Scroll -->
+    <script>
+        var el = document.getElementById('DIV');
+        var el1 = document.getElementById('DIV-1');
+        var el2 = document.getElementById('DIV-2');
+        var el3 = document.getElementById('DIV-3');
+        var el4 = document.getElementById('DIV-4');
+        el.innerHTML = "<div class='mouse_scroll'><div><span class='m_scroll_arrows unu'></span><span class='m_scroll_arrows doi'></span><span class='m_scroll_arrows trei'></span></div></div>";
+        el1.innerHTML = "<div class='mouse_scroll'><div><span class='m_scroll_arrows unu'></span><span class='m_scroll_arrows doi'></span><span class='m_scroll_arrows trei'></span></div></div>";
+        el2.innerHTML = "<div class='mouse_scroll'><div><span class='m_scroll_arrows unu'></span><span class='m_scroll_arrows doi'></span><span class='m_scroll_arrows trei'></span></div></div>";
+        el3.innerHTML = "<div class='mouse_scroll'><div><span class='m_scroll_arrows unu'></span><span class='m_scroll_arrows doi'></span><span class='m_scroll_arrows trei'></span></div></div>";
+        el4.innerHTML = "<div class='mouse_scroll'><div><span class='m_scroll_arrows unu'></span><span class='m_scroll_arrows doi'></span><span class='m_scroll_arrows trei'></span></div></div>";
+    </script>
+
+    <!--神奇特效-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+</body>
+</html>
